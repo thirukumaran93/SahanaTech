@@ -4,6 +4,8 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
+
+
 (function() {
   "use strict";
 
@@ -11,7 +13,7 @@
     if(window.location.hash=="#form")    {
 
       $.ajax({
-        url: "../../blog.html", success: function (result) {
+        url: "../SahanaTech/blog.html", success: function (result) {
           $(".ajaxcontent").html(result);         
         }
       });
