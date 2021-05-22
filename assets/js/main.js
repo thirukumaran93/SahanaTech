@@ -7,6 +7,17 @@
 (function() {
   "use strict";
 
+  window.onhashchange=function(e){  
+    if(window.location.hash=="#form")    {
+
+      $.ajax({
+        url: "../../blog.html", success: function (result) {
+          $(".ajaxcontent").html(result);         
+        }
+      });
+    }
+      }
+
   /**
    * Easy selector helper function
    */
