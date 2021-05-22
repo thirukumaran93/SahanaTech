@@ -22244,7 +22244,7 @@ section {
 }
 
 .navbar-mobile .mobile-nav-toggle {
-  position: absolute;
+  position: absolute !important;
   top: 15px;
   right: 15px;
 }
