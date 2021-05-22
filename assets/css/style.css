@@ -5252,6 +5252,7 @@ input[type='button'].btn-block
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    box-shadow: none !important;
 }
 .navbar > .container,
 .navbar > .container-fluid
