@@ -17,6 +17,14 @@
           $(".ajaxcontent").html(result);  
           $(".othercontent")[0].style.display="none";
           $(".ajaxcontent")[0].style.display="block";
+          let navbar = select('#navbar')
+          if (navbar.classList.contains('navbar-mobile')) {
+            navbar.classList.remove('navbar-mobile')
+            let navbarToggle = select('.mobile-nav-toggle')
+            navbarToggle.classList.toggle('bi-list')
+            navbarToggle.classList.toggle('bi-x')
+          }
+          scrollto(this.hash)
         }
       });
     }
