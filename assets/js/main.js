@@ -14,9 +14,15 @@
 
       $.ajax({
         url: "../SahanaTech/blog.html", success: function (result) {
-          $(".ajaxcontent").html(result);         
+          $(".ajaxcontent").html(result);  
+          $(".othercontent")[0].style.display="none";
+          $(".ajaxcontent")[0].style.display="block";
         }
       });
+    }
+    else{
+      $(".ajaxcontent")[0].style.display="none";
+      $(".othercontent")[0].style.display="block";
     }
       }
 
@@ -134,7 +140,7 @@
    */
   on('click', '.navbar .dropdown > a', function(e) {
     if (select('#navbar').classList.contains('navbar-mobile')) {
-      e.preventDefault()
+      // e.preventDefault()
       this.nextElementSibling.classList.toggle('dropdown-active')
     }
   }, true)
@@ -144,7 +150,7 @@
    */
   on('click', '.scrollto', function(e) {
     if (select(this.hash)) {
-      e.preventDefault()
+      // e.preventDefault()
 
       let navbar = select('#navbar')
       if (navbar.classList.contains('navbar-mobile')) {
