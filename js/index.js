@@ -5,7 +5,7 @@ $(function () {
   window.onhashchange = function (e) {
     if (window.location.hash!="#") {
       $.ajax({
-        url: "./pages/"+ window.location.hash.replace("#","") +".html", success: function (result) {
+        url: "./pages/"+ window.location.hash.replace("#","") +".php", success: function (result) {
           $(".ajaxcontent").html(result);
         }
       });
@@ -76,7 +76,7 @@ $(function () {
 
   // Close dropdown menu of header menu
   $(document).on('click touchstart', function (e) {
-    e.stopPropagation();
+    // e.stopPropagation();
 
     // closing of dropdown menu in header when clicking outside of it
     var dropTarg = $(e.target).closest('.az-header .dropdown').length;
@@ -132,6 +132,11 @@ $(function () {
     $('body').removeClass('az-header-menu-show');
   })
 
+
+  
+
+    
+    
 
 
 
